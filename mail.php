@@ -1,7 +1,7 @@
 <?php 
 require_once 'env.php';
-$headers = 'From: daniel.artemiev@moneto4ka.tk' . "\r\n" .    
-				'Reply-To: daniel.artemiev@moneto4ka.tk' . "\r\n" .    
+$headers = 'From: ' . "\r\n" .    
+				'Reply-To: ' . "\r\n" .    
 				'X-Mailer: PHP/' . phpversion();
 $body_mail = '';
 $link = mysqli_connect($host, $user, $password, $database) or die("Ошибка " . mysqli_error($link)); 
@@ -20,5 +20,5 @@ if($result)
         
     }
 }
-mail("380954169581daniel@gmail.com", "My Subject", $body_mail, $headers); 
+mail("@gmail.com", "My Subject", $body_mail, $headers); 
 ?>
